@@ -29,8 +29,7 @@ public class main {
 		commonData.appWidth = commonData.screenWidth/2;
 		commonData.appHeight = commonData.screenHeigh/2;
 		Dimension minDim = new Dimension(commonData.appWidth,commonData.appHeight);
-		//System.out.println("Ширина экрана "+commonData.screenWidth);	
-		//System.out.println("Высота экрана "+commonData.screenHeigh);	
+			
 		
 		JF.setVisible(true);
 		JF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
