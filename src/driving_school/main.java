@@ -8,7 +8,8 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 
 public class main {
@@ -27,7 +28,7 @@ public class main {
 		commonData.screenWidth = toolKit.getScreenSize().width;
 		commonData.appWidth = commonData.screenWidth/2;
 		commonData.appHeight = commonData.screenHeigh/2;
-		
+		Dimension minDim = new Dimension(commonData.appWidth,commonData.appHeight);
 		//System.out.println("Ширина экрана "+commonData.screenWidth);	
 		//System.out.println("Высота экрана "+commonData.screenHeigh);	
 		
@@ -35,8 +36,9 @@ public class main {
 		JF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JF.setBounds(commonData.screenWidth/2-commonData.appWidth/2, commonData.screenHeigh/2-commonData.appHeight/2, commonData.appWidth, commonData.appHeight);
 		JF.setTitle("Driving school clinet");
+		JF.addComponentListener(commonFunctions.createResizeAdapterForDefWindows(JF));
 		
-		
+		JF.setMinimumSize(minDim);
 		
 		try {
 			appIcon = ImageIO.read(new File("src/pictures/icon.png"));
