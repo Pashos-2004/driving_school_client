@@ -1,5 +1,6 @@
 package driving_school;
 
+import io.dotenv.Dotenv;
 import javax.swing.*;
 
 public class main {
@@ -12,8 +13,7 @@ public class main {
 		JF.setVisible(true);
 		JF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JF.setSize(720, 480);
-		String MyKey ;
-		MyKey = "dsfgsfgh5465645645654654654";
+		
 	}
 	
 	
