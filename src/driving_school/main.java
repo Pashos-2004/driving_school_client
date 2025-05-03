@@ -13,8 +13,7 @@ public class main {
 		JF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JF.setSize(720, 480);
 		String MyKey ;
-		MyKey = "dsfgsfghfghfg3423dfgfgfsdf487234765234";
-		
+		MyKey = "dsfgsfgh5465645645654654654";
 	}
 	
 	
