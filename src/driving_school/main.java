@@ -12,7 +12,8 @@ public class main {
 		JF.setVisible(true);
 		JF.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JF.setSize(720, 480);
-		String MyKey = "dsfgsfghfghfg3423fdgdfsdfghfgfsdf487234765234";
+		String MyKey ;
+		MyKey = "dsfgsfghfghfg3423dfgfgfsdf487234765234";
 		
 	}
 	
