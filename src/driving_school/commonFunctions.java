@@ -7,7 +7,7 @@ import java.awt.event.ComponentEvent;
 
 public class commonFunctions {
 
-	public static ComponentAdapter createResizeAdapterForDefWindows(JFrame JF) {
+	protected static ComponentAdapter createResizeAdapterForDefWindows(JFrame JF) {
 		
 		ComponentAdapter resizeAdapterForDefWindows = new ComponentAdapter() {
 	        @Override
@@ -16,7 +16,6 @@ public class commonFunctions {
 	        	double curWidth = JF.getWidth();
 	        	double curHeight = JF.getHeight();
 	            
-	        	
 	        	if (curWidth != commonData.appWidth) {
 	        		curHeight = commonData.appHeight + (curWidth-commonData.appWidth)/commonData.screenWidth*commonData.screenHeigh ;
 	        	}else if (curHeight != commonData.appHeight) {
@@ -30,6 +29,7 @@ public class commonFunctions {
 	    
 	    return (resizeAdapterForDefWindows);
 	}
+	
 	
 	
 	
